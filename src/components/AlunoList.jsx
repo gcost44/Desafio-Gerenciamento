@@ -24,6 +24,7 @@ const AlunoList = ({ alunos, mediaTurma, alunosAcimaMedia, removeAluno }) => {
       {alunos.map((aluno, index) => {
         const mediaNotas = (aluno.notas.reduce((acc, nota) => acc + Number(nota), 0) / aluno.notas.length).toFixed(2);
         const mediaFrequencias = (aluno.frequencias.reduce((acc, frequencia) => acc + Number(frequencia), 0) / aluno.frequencias.length).toFixed(2);
+        //Aqui onde ocorre a media de frequencia para ela ser jogaga na lista de alunos.
 
         return (
           <div key={index} className="aluno">

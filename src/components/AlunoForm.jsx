@@ -57,6 +57,7 @@ const AlunoForm = ({ addAluno }) => {
       ))}
       <h3>Frequências</h3>
       {frequencias.map((frequencia, index) => (
+        //Na frequencia achei mais logico colocar uma frequencia para cada materia, pois caso o aluno falte em uma materia, ele pode ter uma frequencia diferente nas outras.
         <input
           key={index}
           type="number"
